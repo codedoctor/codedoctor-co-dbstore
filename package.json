@@ -24,7 +24,7 @@
         "node": ">=0.8.0"
     },
     "dependencies": {
-        "mongoose": "3.6.5",
+        "mongoose": "3.6.4",
         "underscore": "1.4.4",
         "pkginfo" : "0.3.0",
         "async" : "0.2.7",
