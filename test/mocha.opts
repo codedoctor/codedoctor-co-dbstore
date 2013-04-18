@@ -1,0 +1,4 @@
+--require assert
+--require should
+--globals name,store,skindb,i,len,uuid,subscribe
+--compilers coffee:coffee-script 

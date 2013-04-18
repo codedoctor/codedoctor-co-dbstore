@@ -24,7 +24,7 @@
         "node": ">=0.8.0"
     },
     "dependencies": {
-        "mongoose": "3.6.4",
+        "mongoose": "3.6.5",
         "underscore": "1.4.4",
         "pkginfo" : "0.3.0",
         "async" : "0.2.7",
@@ -36,6 +36,7 @@
         "mongoose-plugins-resource-limits": "0.2.0",
         "mongoose-plugins-tags-simple": "0.2.0",
         "mongodb-objectid-helper": "0.2.0",
+        "mongoose-plugins-accessible-by" : "0.2.2",
         "simple-paginator": "0.2.0",
         "mongodb-errors": "0.2.0"
 
