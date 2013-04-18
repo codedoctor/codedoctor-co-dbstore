@@ -28,11 +28,14 @@ module.exports = class ResourceMethods
     @models.Resource.count  {}, (err, totalCount) =>
       return cb err if err
       options.offset or= 0
-      options.count or= 100
+      options.count or= 1000
+      options.sort or= 'title'
+      options.find or= {}
 
-      query = @models.Resource.find({})
+      query = @models.Resource.find(options.find)
       query.select(options.select) if options.select && options.select.length > 0
       query.setOptions { skip: options.offset, limit: options.count} if options.count or options.offset
+      query.sort options.sort
       query.exec (err, items) =>
         return cb err if err
         cb null, new PageResult(items || [], totalCount, options.offset, options.count)
