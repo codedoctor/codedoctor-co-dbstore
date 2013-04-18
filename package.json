@@ -1,0 +1,57 @@
+{
+    "author": "Martin Wawrusch <martin@wawrusch.com> (http://martinatsunset.com)",
+    "name": "codedoctor-co-dbstore",
+    "description": "CodeDoctor.co database storage module.",
+    "version": "0.2.0",
+    "private": false,
+    "main" : "lib/index.js",
+      "keywords" : [
+        "dbstore","codedoctor", "codedoctor.co"
+      ],
+      "directories" : {
+      "lib" : "./lib",
+      "test" : "./test"
+    },
+
+    "scripts": {
+     "prepublish" : "node_modules/.bin/coffee -c -o lib src",
+     "watch" : "node_modules/.bin/coffee -c -w  -o lib src",
+     "test": "node_modules/.bin/coffee -c -o lib src;NODE_ENV=test node_modules/.bin/mocha --timeout 10000 -R spec test/*-test.coffee",
+     "test-xunit": "node_modules/.bin/coffee -c -o lib src;NODE_ENV=test node_modules/.bin/mocha --timeout 10000 -C -R xunit test/*-test.coffee",
+     "docs": "node_modules/.bin/codo -i ./src -o ./doc"
+   },
+    "engines": {
+        "node": ">=0.8.0"
+    },
+    "dependencies": {
+        "mongoose": "3.6.4",
+        "underscore": "1.4.4",
+        "pkginfo" : "0.3.0",
+        "async" : "0.2.7",
+        "some-errors": "0.2.0",
+        "underscore-ext" : "0.2.0",
+        "mongoose-plugins-timestamp": "0.2.0",
+        "mongoose-plugins-created-by": "0.2.0",
+        "mongoose-plugins-delete-paranoid": "0.2.0",
+        "mongoose-plugins-resource-limits": "0.2.0",
+        "mongoose-plugins-tags-simple": "0.2.0",
+        "mongodb-objectid-helper": "0.2.0",
+        "simple-paginator": "0.2.0",
+        "mongodb-errors": "0.2.0"
+
+    },
+    "bundledDependencies": [],
+    "devDependencies": {
+        "should" : "1.2.2",   
+        "coffee-script" : "1.6.2", 
+        "mocha": "1.9.0",
+        "mongoskin": "0.5.0",
+        "codo": "1.6.0"
+    },
+  "bugs": { "url": "http://github.com/codedoctor/codedoctor-co-dbstore/issues" },
+  "licenses": [
+    { "type": "PRIVATE",
+      "url": "http://github.com/codedoctor/codedoctor-co-dbstore/raw/master/LICENSE"
+    }
+  ]
+}
