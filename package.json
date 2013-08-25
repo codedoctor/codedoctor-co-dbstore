@@ -24,10 +24,10 @@
         "node": ">=0.8.0"
     },
     "dependencies": {
-        "mongoose": "3.6.4",
-        "underscore": "1.4.4",
+        "mongoose": "*",
+        "underscore": "1.5.1",
         "pkginfo" : "0.3.0",
-        "async" : "0.2.7",
+        "async" : "0.2.9",
         "some-errors": "0.2.0",
         "underscore-ext" : "0.2.0",
         "mongoose-plugins-timestamp": "0.2.0",
@@ -37,22 +37,27 @@
         "mongoose-plugins-tags-simple": "0.2.0",
         "mongodb-objectid-helper": "0.2.0",
         "mongoose-plugins-accessible-by" : "0.2.2",
-        "simple-paginator": "0.2.0",
+        "simple-paginator": "0.2.1",
         "mongodb-errors": "0.2.0"
 
     },
     "bundledDependencies": [],
     "devDependencies": {
         "should" : "1.2.2",   
-        "coffee-script" : "1.6.2", 
-        "mocha": "1.9.0",
+        "coffee-script" : "1.6.3", 
+        "mocha": "1.12.0",
         "mongoskin": "0.5.0",
-        "codo": "1.6.0"
+        "codo": "1.7.2"
     },
   "bugs": { "url": "http://github.com/codedoctor/codedoctor-co-dbstore/issues" },
   "licenses": [
     { "type": "PRIVATE",
       "url": "http://github.com/codedoctor/codedoctor-co-dbstore/raw/master/LICENSE"
     }
-  ]
+  ],
+  "repository" :
+  { "type" : "git"
+  , "url" : "http://github.com/codedoctor/codedoctor-co-dbstore.git"
+  }
+
 }
